@@ -154,7 +154,6 @@ class glTF2ExportUserExtension:
 
         self.add_hubs_components(
             gltf2_object, blender_material, export_settings)
-
         from .utils import gather_lightmap_texture_info
         if blender_material.node_tree and blender_material.use_nodes:
             lightmap_texture_info = gather_lightmap_texture_info(
